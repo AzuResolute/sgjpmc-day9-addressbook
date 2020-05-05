@@ -37,7 +37,7 @@ public class UserIOImpl implements UserIO {
         try {
             do {
                 result = ui.nextInt();
-                if(result >= min || result <= max) {
+                if(result >= min && result <= max) {
                     valid = true;
                 } else {
                     System.out.println("Invalid Input. Please try again.");
@@ -71,7 +71,7 @@ public class UserIOImpl implements UserIO {
         try {
             do {
                 result = ui.nextDouble();
-                if(result >= min || result <= max) {
+                if(result >= min && result <= max) {
                     valid = true;
                 } else {
                     System.out.println("Invalid Input. Please try again.");
@@ -105,7 +105,7 @@ public class UserIOImpl implements UserIO {
         try {
             do {
                 result = ui.nextFloat();
-                if(result >= min || result <= max) {
+                if(result >= min && result <= max) {
                     valid = true;
                 } else {
                     System.out.println("Invalid Input. Please try again.");
@@ -139,7 +139,7 @@ public class UserIOImpl implements UserIO {
         try {
             do {
                 result = ui.nextLong();
-                if(result >= min || result <= max) {
+                if(result >= min && result <= max) {
                     valid = true;
                 } else {
                     System.out.println("Invalid Input. Please try again.");
