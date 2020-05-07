@@ -6,12 +6,12 @@ public class UserIOImpl implements UserIO {
     private static Scanner ui = new Scanner(System.in);
     @Override
     public void print(String message) {
-        System.out.print(message);
+        System.out.println(message);
     }
 
     @Override
     public String readString(String prompt) {
-        System.out.print(prompt);
+        System.out.println(prompt);
         return ui.nextLine();
     }
 
