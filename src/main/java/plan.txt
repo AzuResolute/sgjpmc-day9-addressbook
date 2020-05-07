@@ -1,0 +1,45 @@
+# AddressBook Plan v1
+##### Legend ######
+> package
++ public
+- private
+: implements
+-> extends
+(g/s) getter/setter
+* static
+
+##### EXAMPLE SYNTAX ######
+>package name
+    +class.java
+        +fieldName : type (g/s)
+        +methodName() : return type
+    +interface.java
+        +methodName() : return type
+    +class2.java : interface.java
+        +fieldName : type
+        +methodName() : return type
+    +class3.java -> class2.java
+        +fieldName : type
+        +methodName() : return type
+
+##### EXAMPLE USAGE ######
+>com.sq.Package
+    +App.Java
+        +*main(string[] args) : void
+>com.sq.Package.dto
+    +Client.java (noun)
+        +name : String (g/s)
+        +address1 : String (g/s)
+        +address2 : String (g/s)
+        +state : String (g/s)
+        +postalCode : String (g/s)
+    +Company -> Client.java (noun)
+        +name : String (g/s)
+        +address1 : String (g/s)
+        +address2 : String (g/s)
+        +state : String (g/s)
+        +postalCode : String (g/s)
+>controller
+>service
+>dao
+>view
